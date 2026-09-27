@@ -1,0 +1,123 @@
+/* Brick refinement: Why Pristine editorial proportions. */
+.why-pristine {
+  padding: 98px 32px 110px;
+}
+
+.why-pristine-container {
+  width: min(1400px, 100%);
+  min-height: 570px;
+  grid-template-columns: minmax(0, 48%) minmax(0, 44%);
+  justify-content: space-between;
+  gap: 0;
+}
+
+.why-pristine-copy {
+  max-width: 590px;
+}
+
+.why-pristine h2 {
+  margin: 20px 0 62px;
+  font-size: clamp(52px, 4vw, 58px);
+  line-height: .97;
+  letter-spacing: -.045em;
+  font-weight: 600;
+}
+
+.why-pristine-list article {
+  padding: 25px 0;
+}
+
+.why-pristine-media {
+  position: relative;
+  min-height: 570px;
+  padding-bottom: 30px;
+}
+
+.why-pristine-image {
+  min-height: 540px;
+  border-radius: 20px;
+}
+
+.why-pristine-cta {
+  position: absolute;
+  right: 42px;
+  bottom: 0;
+  left: 42px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+  padding: 0 26px;
+  border-radius: 999px;
+  background: var(--green);
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  text-decoration: none;
+}
+
+.why-pristine-cta:hover {
+  filter: brightness(.96);
+}
+
+@media (max-width: 1100px) {
+  .why-pristine {
+    padding: 96px 24px 105px;
+  }
+
+  .why-pristine-container {
+    grid-template-columns: minmax(0, 48%) minmax(0, 45%);
+    min-height: 530px;
+  }
+
+  .why-pristine h2 {
+    font-size: clamp(48px, 5vw, 56px);
+  }
+
+  .why-pristine-media {
+    min-height: 520px;
+    padding-bottom: 28px;
+  }
+
+  .why-pristine-image {
+    min-height: 492px;
+  }
+
+  .why-pristine-cta {
+    right: 32px;
+    left: 32px;
+    min-height: 56px;
+  }
+}
+
+@media (max-width: 810px) {
+  .why-pristine-container {
+    grid-template-columns: 1fr;
+  }
+
+  .why-pristine-media {
+    min-height: 520px;
+    order: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .why-pristine-media {
+    min-height: 440px;
+    padding-bottom: 28px;
+  }
+
+  .why-pristine-image {
+    min-height: 412px;
+  }
+
+  .why-pristine-cta {
+    right: 20px;
+    left: 20px;
+    min-height: 54px;
+    padding: 0 20px;
+    font-size: 13px;
+  }
+}

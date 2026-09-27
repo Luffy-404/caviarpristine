@@ -1,0 +1,155 @@
+@media (max-width: 767px) {
+  .pristine-footer {
+    padding: 16px;
+    background-position: center;
+  }
+
+  .footer-panels {
+    display: block;
+    max-width: none;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  .footer-brand-card,
+  .footer-info-card {
+    position: static;
+    min-height: 0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .footer-brand-card {
+    padding: 28px 24px 24px;
+    border-bottom: 1px solid #e5e6e3;
+  }
+
+  .footer-logo {
+    font-size: 16px;
+  }
+
+  .footer-subscribe {
+    position: static;
+    margin-top: 24px;
+  }
+
+  .footer-subscribe h2 {
+    max-width: 280px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+  }
+
+  .footer-subscribe p {
+    margin: 12px 0 10px;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .footer-form {
+    display: flex;
+    height: 48px;
+    margin: 0;
+    border: 1px solid #dfe2de;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .footer-form input {
+    min-width: 0;
+    height: 46px;
+    padding: 0 14px;
+    border: 0;
+    font-size: 12px;
+  }
+
+  .footer-form button {
+    flex: 0 0 auto;
+    height: 34px;
+    margin: 6px;
+    padding: 0 14px;
+    border-radius: 999px;
+    font-size: 11px;
+  }
+
+  .footer-brand-card small {
+    position: static;
+    display: block;
+    margin-top: 18px;
+    color: #777b77;
+    font-size: 10px;
+    line-height: 1.35;
+  }
+
+  .footer-info-card {
+    display: block;
+  }
+
+  .footer-info {
+    min-height: 0 !important;
+    padding: 25px 24px;
+    border: 0 !important;
+    border-bottom: 1px solid #e5e6e3 !important;
+  }
+
+  .footer-info:last-child {
+    border-bottom: 0 !important;
+  }
+
+  .footer-info h2 {
+    margin: 0 0 14px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+  }
+
+  .footer-info.pages nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 20px;
+    margin: 0;
+  }
+
+  .footer-info li,
+  .footer-info a,
+  .footer-info p {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .footer-info p {
+    margin: 0;
+    color: #4e534e;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-social-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #202320;
+  }
+
+  .footer-social-links span {
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .footer-social-links span[aria-label="Instagram"] {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .footer-social-links span[aria-label="YouTube"] {
+    font-size: 14px;
+  }
+}

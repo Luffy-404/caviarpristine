@@ -1,0 +1,17 @@
+/* Mivora's type system: only Inter and Instrument Sans. */
+body { font-family: var(--font-inter), Arial, sans-serif; }
+
+.hero h1,
+.intro h2,
+.farm-band h2,
+.farm-card h3,
+.section-title h2,
+.why h2,
+.numbers h2,
+.technology h2,
+.journal h2,
+.journal h3,
+.discover h2,
+.float-card strong {
+  font-family: var(--font-instrument-sans), Arial, sans-serif;
+}

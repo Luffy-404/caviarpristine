@@ -1,0 +1,15 @@
+/* Brick 02 — Hero-only refinement. Navbar and downstream sections remain untouched. */
+.hero{width:100%;height:auto;min-height:clamp(760px,100svh,920px);border-radius:0 0 22px 22px;isolation:isolate}
+.hero>img{object-position:center;transform:scale(1.01)}
+.hero-overlay{background:linear-gradient(90deg,rgba(12,43,40,.54) 0%,rgba(12,43,40,.28) 42%,rgba(12,43,40,.06) 72%,rgba(12,43,40,0) 100%)}
+.hero-copy{top:auto;bottom:132px;left:4.5%;max-width:525px}
+.hero-copy .eyebrow{font-size:9px;letter-spacing:.11em;margin-bottom:16px}
+.hero h1{max-width:510px;font-size:clamp(58px,5.8vw,80px);line-height:.91;letter-spacing:-.073em;font-weight:650}
+.hero p{max-width:350px;margin:19px 0 21px;font-size:13px;line-height:1.45}
+.hero-actions{gap:19px;font-size:11px}.hero-actions .button{padding:12px 17px;font-size:10px}.hero-actions>a:not(.button){padding-bottom:3px}
+.float-card{right:3.5%;bottom:46px;width:370px;min-height:184px;padding:13px;border-radius:11px;gap:14px;box-shadow:0 10px 26px rgba(0,0,0,.12)}
+.float-card img{width:132px;height:132px;border-radius:6px;align-self:start}.float-card .eyebrow{font-size:7px;letter-spacing:.1em;margin:5px 0 12px}.float-card strong{font-size:18px;line-height:1.02;letter-spacing:-.055em}.float-card span{font-size:9px;margin-top:18px;color:#515852;border-bottom:1px solid #7f857e;padding-bottom:3px;width:max-content}
+@media(max-width:1024px){.hero{min-height:clamp(690px,100svh,800px)}.hero-copy{left:5%;bottom:104px}.hero h1{font-size:clamp(52px,6.8vw,70px)}.float-card{bottom:32px;width:300px;min-height:166px;padding:11px;gap:11px}.float-card img{width:112px;height:112px}.float-card strong{font-size:15px}.float-card span{margin-top:14px}}
+@media(max-width:810px){.hero{min-height:660px;border-radius:0 0 18px 18px}.hero>img{object-position:68% center}.hero-copy{left:28px;bottom:196px;right:28px}.hero h1{max-width:470px;font-size:clamp(46px,8vw,60px)}.float-card{left:auto;right:28px;bottom:24px;width:276px;min-height:155px}.float-card img{width:98px;height:98px}.float-card strong{font-size:14px}.float-card span{margin-top:10px}}
+@media(max-width:500px){.hero{min-height:700px;border-radius:0 0 16px 16px}.hero>img{object-position:67% center}.hero-overlay{background:linear-gradient(180deg,rgba(16,37,43,.34),rgba(16,37,43,.78) 78%,rgba(16,37,43,.88))}.hero-copy{left:22px;right:22px;bottom:184px}.hero h1{max-width:350px;font-size:48px;line-height:.91}.hero p{max-width:286px;font-size:12px;margin:16px 0 17px}.hero-actions{gap:15px;font-size:10px}.hero-actions .button{padding:11px 13px;font-size:9px}.float-card{left:22px;right:22px;bottom:0;width:auto;min-height:142px;padding:10px;border-radius:10px 10px 0 0}.float-card img{width:94px;height:94px}.float-card .eyebrow{margin:3px 0 8px}.float-card strong{font-size:15px}.float-card span{font-size:8px;margin-top:9px}}
+@media(prefers-reduced-motion:reduce){.hero>img{transform:none}}
