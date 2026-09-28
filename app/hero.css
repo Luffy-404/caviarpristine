@@ -13,3 +13,8 @@
 @media(max-width:810px){.hero{min-height:660px;border-radius:0 0 18px 18px}.hero>img{object-position:68% center}.hero-copy{left:28px;bottom:196px;right:28px}.hero h1{max-width:470px;font-size:clamp(46px,8vw,60px)}.float-card{left:auto;right:28px;bottom:24px;width:276px;min-height:155px}.float-card img{width:98px;height:98px}.float-card strong{font-size:14px}.float-card span{margin-top:10px}}
 @media(max-width:500px){.hero{min-height:700px;border-radius:0 0 16px 16px}.hero>img{object-position:67% center}.hero-overlay{background:linear-gradient(180deg,rgba(16,37,43,.34),rgba(16,37,43,.78) 78%,rgba(16,37,43,.88))}.hero-copy{left:22px;right:22px;bottom:184px}.hero h1{max-width:350px;font-size:48px;line-height:.91}.hero p{max-width:286px;font-size:12px;margin:16px 0 17px}.hero-actions{gap:15px;font-size:10px}.hero-actions .button{padding:11px 13px;font-size:9px}.float-card{left:22px;right:22px;bottom:0;width:auto;min-height:142px;padding:10px;border-radius:10px 10px 0 0}.float-card img{width:94px;height:94px}.float-card .eyebrow{margin:3px 0 8px}.float-card strong{font-size:15px}.float-card span{font-size:8px;margin-top:9px}}
 @media(prefers-reduced-motion:reduce){.hero>img{transform:none}}
+
+/* CSS backgrounds do not receive responsive optimization, so use compact source files. */
+.trio.one,.story-a,.trio.three,.story-c,.why-image,.tech-image{background-image:url('/images/sturgeon-water.webp')}
+.trio.two,.story-b,.farm-card-img{background-image:url('/images/caviar-editorial.webp')}
+.discover{background-image:linear-gradient(#10252b7e,#10252bbd),url('/images/sturgeon-water.webp')}

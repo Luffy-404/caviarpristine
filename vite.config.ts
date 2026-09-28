@@ -5,8 +5,8 @@ import { defineConfig } from "vite";
 
 // Vercel is served through Nitro's Build Output API adapter. Do not combine
 // this with a Cloudflare/Workers plugin: that creates a different artifact.
-export default defineConfig({
-  plugins: [vinext(), nitro()],
+export default defineConfig(({ command }) => ({
+  plugins: [vinext(), ...(command === "build" ? [nitro()] : [])],
   resolve: {
     // Vite's CSS import pass needs an explicit file target for Tailwind v4
     // when it runs alongside the Vinext RSC environments.
@@ -16,4 +16,4 @@ export default defineConfig({
       ),
     },
   },
-});
+}));

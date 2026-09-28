@@ -64,3 +64,11 @@
   .pristine-farm{padding:36px 20px 80px}.pristine-farm-container{max-width:350px}.farm-label{font-size:10px;font-weight:500;letter-spacing:.05em}.farm-header h2{max-width:350px;margin:16px 0 0;font-size:clamp(29px,8vw,32px);font-weight:500;line-height:1.05;letter-spacing:-.035em}.farm-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 0;padding:0;overflow:visible}.farm-tabs button{min-height:36px;padding:0 13px;border:1px solid rgba(0,0,0,.12);border-radius:8px;background:transparent;font-size:11px;font-weight:500;letter-spacing:-.01em}.farm-tabs button[aria-selected="true"]{border-color:rgba(0,0,0,.25);background:rgba(0,0,0,.025);box-shadow:none;font-weight:600}.farm-content-card{display:grid;grid-template-columns:1fr;gap:0;min-height:0;margin-top:31px;padding:12px;border-radius:20px;background:#fff}.farm-card-image{min-height:195px;border-radius:12px}.farm-card-copy{padding:19px 8px 12px}.farm-card-label{margin:0 0 18px;font-size:10px;font-weight:500}.farm-card-copy h3{max-width:none;margin:0;font-size:27px;font-weight:500;line-height:1.05;letter-spacing:-.03em}.farm-card-description{margin-top:14px;font-size:14px;line-height:1.45}.farm-card-copy ul{margin:26px 0 22px}.farm-card-copy li{gap:9px;margin:0 0 14px;font-size:13px;line-height:1.4}.farm-card-copy li svg{width:13px;height:13px}.farm-card-button{min-height:46px;margin-top:4px;padding:0 17px;font-size:10px}
 }
 @media(max-width:390px){.pristine-farm{padding-inline:16px}.farm-card-image{min-height:185px}.farm-header h2{font-size:29px}.farm-tabs button{padding-inline:12px;font-size:10px}}
+
+/* Keep the expanded navigation attached to the viewport, not the animated header. */
+@media(max-width:767px){
+  .nav-wrap{animation:none}
+  .nav-wrap.nav-is-open{position:fixed;inset:0;top:0}
+  .nav-is-open .nav{margin-top:16px}
+  .nav-wrap.nav-is-open .mobile-menu{position:absolute;inset:0;z-index:1;background:#0b1d1d;overflow-y:auto}
+}

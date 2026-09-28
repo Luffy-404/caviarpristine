@@ -1,0 +1,218 @@
+{
+  "_AnimatePresence-Cz1ZojUE.js": {
+    "file": "_next/static/chunks/AnimatePresence-Cz1ZojUE.js",
+    "name": "AnimatePresence",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_react-DfjENj3M.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_Icon-Bo9jbUr1.js": {
+    "file": "_next/static/chunks/Icon-Bo9jbUr1.js",
+    "name": "Icon",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_arrow-up-right-BaaZSV8Y.js": {
+    "file": "_next/static/chunks/arrow-up-right-BaaZSV8Y.js",
+    "name": "arrow-up-right",
+    "imports": [
+      "_createLucideIcon-CLApvFWr.js"
+    ]
+  },
+  "_createLucideIcon-CLApvFWr.js": {
+    "file": "_next/static/chunks/createLucideIcon-CLApvFWr.js",
+    "name": "createLucideIcon",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_Icon-Bo9jbUr1.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_framework-D_rUT4EX.js": {
+    "file": "_next/static/chunks/framework-D_rUT4EX.js",
+    "name": "framework",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js"
+    ]
+  },
+  "_react-DfjENj3M.js": {
+    "file": "_next/static/chunks/react-DfjENj3M.js",
+    "name": "react",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_rolldown-runtime-C60lm6uB.js": {
+    "file": "_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+    "name": "rolldown-runtime"
+  },
+  "_use-reduced-motion-BLvXp60f.js": {
+    "file": "_next/static/chunks/use-reduced-motion-BLvXp60f.js",
+    "name": "use-reduced-motion",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_react-DfjENj3M.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/case-studies-section.tsx": {
+    "file": "_next/static/chunks/case-studies-section-CiRGzo4L.js",
+    "name": "case-studies-section",
+    "src": "components/case-studies-section.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "components/motion/index.tsx",
+      "node_modules/vinext/dist/shims/image.js",
+      "_arrow-up-right-BaaZSV8Y.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/faq-section.tsx": {
+    "file": "_next/static/chunks/faq-section-B0vwxsqx.js",
+    "name": "faq-section",
+    "src": "components/faq-section.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "node_modules/vinext/dist/shims/image.js",
+      "_AnimatePresence-Cz1ZojUE.js",
+      "_react-DfjENj3M.js",
+      "_use-reduced-motion-BLvXp60f.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/motion/index.tsx": {
+    "file": "_next/static/chunks/motion-CV_V-Qtj.js",
+    "name": "motion",
+    "src": "components/motion/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_react-DfjENj3M.js",
+      "_use-reduced-motion-BLvXp60f.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/pristine-farm-section.tsx": {
+    "file": "_next/static/chunks/pristine-farm-section-B83DSQSW.js",
+    "name": "pristine-farm-section",
+    "src": "components/pristine-farm-section.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "components/motion/index.tsx",
+      "node_modules/vinext/dist/shims/image.js",
+      "_AnimatePresence-Cz1ZojUE.js",
+      "_react-DfjENj3M.js",
+      "_createLucideIcon-CLApvFWr.js",
+      "_arrow-up-right-BaaZSV8Y.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/site-header.tsx": {
+    "file": "_next/static/chunks/site-header-Ubl6EkpA.js",
+    "name": "site-header",
+    "src": "components/site-header.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_AnimatePresence-Cz1ZojUE.js",
+      "_react-DfjENj3M.js",
+      "_createLucideIcon-CLApvFWr.js",
+      "_arrow-up-right-BaaZSV8Y.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/sustainability-numbers-section.tsx": {
+    "file": "_next/static/chunks/sustainability-numbers-section-clmxahmY.js",
+    "name": "sustainability-numbers-section",
+    "src": "components/sustainability-numbers-section.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "components/motion/index.tsx",
+      "_createLucideIcon-CLApvFWr.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/testimonials-section.tsx": {
+    "file": "_next/static/chunks/testimonials-section-DNIMAJYG.js",
+    "name": "testimonials-section",
+    "src": "components/testimonials-section.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "components/motion/index.tsx",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/image.js": {
+    "file": "_next/static/chunks/image-Cq78lhE6.js",
+    "name": "image",
+    "src": "node_modules/vinext/dist/shims/image.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
+    "file": "_next/static/chunks/app-route-prefetch-policy-qgELiXNi.js",
+    "name": "app-route-prefetch-policy",
+    "src": "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "virtual:vinext-app-browser-entry"
+    ]
+  },
+  "node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "_next/static/chunks/layout-segment-context-Cxl4O9tm.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/streamed-icons.js": {
+    "file": "_next/static/chunks/streamed-icons-Krg5Wk5X.js",
+    "name": "streamed-icons",
+    "src": "node_modules/vinext/dist/shims/streamed-icons.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "virtual:vinext-app-browser-entry": {
+    "file": "_next/static/chunks/index-BGKMtP-j.js",
+    "name": "index",
+    "src": "virtual:vinext-app-browser-entry",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ],
+    "dynamicImports": [
+      "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
+      "virtual:vinext-app-browser-entry",
+      "components/testimonials-section.tsx",
+      "node_modules/vinext/dist/shims/layout-segment-context.js",
+      "components/motion/index.tsx",
+      "_Icon-Bo9jbUr1.js",
+      "components/pristine-farm-section.tsx",
+      "node_modules/vinext/dist/shims/streamed-icons.js",
+      "components/site-header.tsx",
+      "node_modules/vinext/dist/shims/image.js",
+      "components/sustainability-numbers-section.tsx",
+      "components/faq-section.tsx",
+      "components/case-studies-section.tsx"
+    ]
+  }
+}
