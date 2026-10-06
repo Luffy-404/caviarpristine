@@ -4,10 +4,12 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { motion, useInView, useReducedMotion, type Variants } from "motion/react";
 
 export const motionViewport = { once: true, amount: 0.15 } as const;
-export const fadeUp: Variants = { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0, transition: { duration: 0.72, ease: "easeOut" } } };
-export const fadeIn: Variants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { duration: 0.65, ease: "easeOut" } } };
-export const fadeScale: Variants = { hidden: { opacity: 0, y: 20, scale: 0.98 }, visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.72, ease: "easeOut" } } };
-export const staggerChildren: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.1 } } };
+const editorialEase = [0.22, 1, 0.36, 1] as const;
+export const fadeUp: Variants = { hidden: { opacity: 0, y: 38 }, visible: { opacity: 1, y: 0, transition: { duration: 0.82, ease: editorialEase } } };
+export const fadeIn: Variants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { duration: 0.72, ease: editorialEase } } };
+export const fadeScale: Variants = { hidden: { opacity: 0, y: 28, scale: 0.985 }, visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.82, ease: editorialEase } } };
+export const imageReveal: Variants = { hidden: { opacity: 0, scale: 1.045 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.95, ease: editorialEase } } };
+export const staggerChildren: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.09, delayChildren: 0.03 } } };
 
 type RevealProps = { children: ReactNode; className?: string; delay?: number; variant?: Variants; immediate?: boolean };
 export function Reveal({ children, className, delay = 0, variant = fadeUp, immediate = false }: RevealProps) {
@@ -19,6 +21,10 @@ export function Reveal({ children, className, delay = 0, variant = fadeUp, immed
 export function Stagger({ children, className, immediate = false }: Omit<RevealProps, "delay" | "variant">) {
   const reduced = useReducedMotion();
   return <motion.div className={className} variants={staggerChildren} initial={reduced ? false : "hidden"} {...(immediate ? { animate: "visible" } : { whileInView: "visible", viewport: motionViewport })}>{children}</motion.div>;
+}
+
+export function RevealImage({ children, className, delay = 0 }: Omit<RevealProps, "variant" | "immediate">) {
+  return <Reveal className={className} delay={delay} variant={imageReveal}>{children}</Reveal>;
 }
 
 type CounterProps = { value: number; prefix?: string; suffix?: string; duration?: number; formatter?: (value: number) => string; className?: string };

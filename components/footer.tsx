@@ -1,13 +1,16 @@
-import { Droplets } from "lucide-react";
+"use client";
+
+import { Reveal } from "@/components/motion";
 
 const pages = [["Home", "/"], ["The Farm", "/farm"], ["Caviar", "/caviar"], ["Aquaculture", "/aquaculture"], ["Sustainability", "/sustainability"], ["Quality", "/quality"], ["Contact", "/contact"]] as const;
 
 export function Footer() {
   return (
+    <Reveal>
     <footer className="pristine-footer" id="footer">
       <div className="footer-panels">
         <section className="footer-brand-card" aria-labelledby="footer-statement">
-          <a className="footer-logo" href="/" aria-label="Pristine home"><Droplets aria-hidden="true" size={26} fill="currentColor" /> PRISTINE<span>®</span></a>
+          <a className="footer-logo" href="/" aria-label="Pristine Fish Farm home"><img src="/images/pristine-fish-farm-logo.png" alt="Pristine Fish Farm" /></a>
           <div className="footer-subscribe">
             <h2 id="footer-statement">Premium caviar, UAE-farmed sturgeon and aquaculture consultancy from Abu Dhabi.</h2>
             <p>Elegant · Enquiry-led · Multi-audience</p>
@@ -31,5 +34,6 @@ export function Footer() {
         </section>
       </div>
     </footer>
+    </Reveal>
   );
 }
