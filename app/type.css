@@ -1,5 +1,5 @@
-/* Mivora's type system: only Inter and Instrument Sans. */
-body { font-family: var(--font-inter), Arial, sans-serif; }
+/* Pristine type system: Inter for UI, Georgia for editorial display. */
+body { font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 
 .hero h1,
 .intro h2,
@@ -13,5 +13,5 @@ body { font-family: var(--font-inter), Arial, sans-serif; }
 .journal h3,
 .discover h2,
 .float-card strong {
-  font-family: var(--font-instrument-sans), Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", serif;
 }

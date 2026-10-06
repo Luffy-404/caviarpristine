@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const links = [["Farm", "#farm"], ["Caviar", "#caviar"], ["Aquaculture", "#aquaculture"], ["Sustainability", "#sustainability"], ["Journal", "#journal"]] as const;
+const links = [["Caviar", "#caviar"], ["Sturgeon", "#sturgeon"], ["Consultancy", "#consultancy"], ["Who we serve", "#audiences"], ["About us", "#about"], ["Our farm", "#farm"], ["Contact", "#contact"]] as const;
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);

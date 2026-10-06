@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Instrument_Sans, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import "./navbar.css";
 import "./hero.css";
@@ -22,20 +22,20 @@ import "./button-interactions.css";
 import "./navbar-desktop-geometry.css";
 import "./footer-redesign.css";
 import "./final-motion.css";
+import "./content-migration.css";
+import "./quality-editorial.css";
+import "./our-direction.css";
+import "./sturgeon-editorial.css";
+import "./our-direction.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
-const instrumentSans = Instrument_Sans({
-  subsets: ["latin"],
-  variable: "--font-instrument-sans",
-});
-
 export const metadata: Metadata = {
-  title: "Pristine Caviar Farm | The Art of Aquaculture",
-  description: "Exceptional caviar shaped by water, care and time.",
+  title: "Pristine Caviar — Crafted in Abu Dhabi",
+  description: "Pristine Caviar — premium UAE-produced caviar and sturgeon for trade, hospitality, retail and private customers.",
   other: {
     "codex-preview": "development",
   },
@@ -52,7 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${instrumentSans.variable} antialiased`}>
+      <body className={`${inter.variable} antialiased`}>
         {children}
       </body>
     </html>

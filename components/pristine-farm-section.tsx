@@ -1,32 +1,31 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowUpRight, Sparkles } from "lucide-react";
-import { useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { ArrowRight, Play } from "lucide-react";
+import { motion } from "motion/react";
 import { Reveal } from "@/components/motion";
 
-const sections = [
-  { tab: "The Farm", eyebrow: "A carefully managed environment", title: "Thoughtful conditions for exceptional caviar.", description: "Pristine brings the natural rhythm of sturgeon farming together with deliberate care for the water and surroundings that sustain it.", bullets: ["Quality-led aquaculture practices", "Controlled water environment", "Purposeful production, from source to selection"], cta: "Explore the farm", image: "/images/caviar-editorial.png", alt: "Caviar presented over ice" },
-  { tab: "Caviar", eyebrow: "Pristine selection", title: "Exceptional caviar, carefully considered.", description: "From selection to final presentation, every detail is handled with the same attention to quality that defines the Pristine name.", bullets: ["Premium caviar selection", "Careful handling and presentation", "Consistent attention to quality"], cta: "Explore caviar", image: "/images/caviar-editorial.png", alt: "Pristine caviar selection" },
-  { tab: "Aquaculture", eyebrow: "Modern aquaculture", title: "Technology and water working together.", description: "Modern aquaculture depends on careful water management, controlled environments and a deep understanding of the species we raise.", bullets: ["Controlled aquatic environments", "Water recirculation systems", "Responsible farming practices"], cta: "Explore aquaculture", image: "/images/sturgeon-water.png", alt: "Water at Pristine's aquaculture environment" },
-  { tab: "Sustainability", eyebrow: "Responsible farming", title: "Growing premium caviar with care for water.", description: "Responsible aquaculture begins with thoughtful resource management and a long-term approach to the environments that support production.", bullets: ["Responsible water management", "Efficient recirculation", "Long-term environmental thinking"], cta: "Our approach", image: "/images/hero-landscape.png", alt: "Green water landscape" },
-  { tab: "Quality", eyebrow: "Quality, from source to selection", title: "Precision at every stage.", description: "From the farm environment to final selection, Pristine maintains a careful process designed around consistency, quality and attention to detail.", bullets: ["Controlled production", "Careful selection", "Premium presentation"], cta: "Our quality", image: "/images/caviar-editorial.png", alt: "Premium caviar selection" },
+type FarmCard = { image: string; alt: string; label: string };
+
+const careCards: FarmCard[] = [
+  { image: "/images/farm-care-hands-on.jpg", alt: "A team member caring for sturgeon in an indoor tank", label: "Hands-on care for our sturgeon" },
+  { image: "/images/farm-care-inspection.jpg", alt: "A team member inspecting a sample under a microscope", label: "A closer look at every detail" },
+  { image: "/images/farm-care-hatchery.jpg", alt: "Sturgeon eggs in hatchery equipment", label: "Care from the earliest stages" },
+];
+const infrastructureCards: FarmCard[] = [
+  { image: "/images/farm-infrastructure-systems.jpg", alt: "Integrated pipework and equipment inside the farm", label: "Integrated farm systems" },
+  { image: "/images/farm-infrastructure-environment.jpg", alt: "Overhead equipment in the controlled indoor environment", label: "A controlled indoor environment" },
+  { image: "/images/farm-infrastructure-operations.jpg", alt: "Operational equipment above farm tanks", label: "The detail behind daily operations" },
 ];
 
+function Eyebrow({ children }: { children: React.ReactNode }) { return <p className="farm-eyebrow"><span aria-hidden="true" />{children}</p>; }
+function FarmCards({ cards }: { cards: FarmCard[] }) { return <div className="farm-card-grid">{cards.map((card, index) => <Reveal key={card.label} delay={index * .07}><motion.article className="farm-editorial-card" whileHover={{ y: -4 }} transition={{ duration: .25 }}><div className="farm-editorial-image"><Image src={card.image} alt={card.alt} fill sizes="(max-width: 720px) 100vw, (max-width: 1080px) 50vw, 33vw" /></div><div className="farm-editorial-caption"><p>{card.label}</p><span className="farm-arrow" aria-hidden="true"><ArrowRight size={14} /></span></div></motion.article></Reveal>)}</div>; }
+
 export function PristineFarmSection() {
-  const [active, setActive] = useState(0);
-  const content = sections[active];
-  return <section className="pristine-farm" id="farm">
-    <div className="pristine-farm-container">
-      <Reveal><header className="farm-header"><p className="farm-label"><Sparkles size={13} aria-hidden="true" /> The Pristine Farm</p><h2>Precision aquaculture,<br />from water to caviar.</h2></header></Reveal>
-      <div className="farm-tabs" role="tablist" aria-label="Explore Pristine farm topics">
-        {sections.map((item, index) => <button key={item.tab} type="button" role="tab" id={`farm-tab-${index}`} aria-selected={active === index} aria-controls="farm-panel" tabIndex={active === index ? 0 : -1} onClick={() => setActive(index)}>{item.tab}</button>)}
-      </div>
-      <AnimatePresence mode="wait"><motion.article className="farm-content-card" id="farm-panel" role="tabpanel" aria-labelledby={`farm-tab-${active}`} key={content.tab} initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -6 }} transition={{ duration: 0.4, ease: "easeOut" }}>
-        <div className="farm-card-image"><Image src={content.image} fill sizes="(max-width: 810px) 100vw, 50vw" alt={content.alt} /></div>
-        <div className="farm-card-copy"><p className="farm-card-label"><Sparkles size={12} aria-hidden="true" /> {content.eyebrow}</p><h3>{content.title}</h3><p className="farm-card-description">{content.description}</p><ul>{content.bullets.map((bullet) => <li key={bullet}><Sparkles size={12} aria-hidden="true" />{bullet}</li>)}</ul><a href="#discover" className="farm-card-button">{content.cta}<ArrowUpRight size={14} /></a></div>
-      </motion.article></AnimatePresence>
-    </div>
-  </section>;
+  return <section className="pristine-farm" id="farm"><div className="farm-contour farm-contour-top" aria-hidden="true" /><div className="pristine-farm-container">
+    <div className="farm-intro"><Reveal><div className="farm-intro-copy"><Eyebrow>Our farm · UAE</Eyebrow><h2>The farm is part<br />of the luxury.</h2><p>At Pristine Caviar, quality begins at our farm in the UAE, where controlled aquatic farming, traceability, and careful handling, come together to support consistent and every stage.</p><div className="farm-copy-rule" /><p className="farm-approved-statement">Largely produced in Abu Dhabi at the only review center farm in the GCC.</p></div></Reveal><Reveal delay={.1}><figure className="farm-hero-photo"><Image src="/images/farm-intro.jpg" alt="Indoor sturgeon tanks at the Pristine farm in the UAE" fill sizes="(max-width: 800px) 100vw, 52vw" /><figcaption>Inside our farm in the UAE</figcaption></figure></Reveal></div>
+    <section className="farm-block farm-care"><div className="farm-block-heading"><div><Eyebrow>Care at every stage</Eyebrow><h3>People. Process. Precision.</h3></div><p>From hands-on care to scientific checks, every stage is guided by experience and attention to detail.</p></div><FarmCards cards={careCards} /></section>
+    <section className="farm-block farm-infrastructure"><div className="farm-block-heading"><div><Eyebrow>Our infrastructure</Eyebrow><h3>Built around the farm.</h3></div><p>Our integrated systems and carefully designed infrastructure support a healthy environment for our sturgeon.</p></div><FarmCards cards={infrastructureCards} /></section>
+    <section className="farm-block farm-film-section"><div className="farm-block-heading"><div><Eyebrow>A closer look</Eyebrow><h3>Step inside our farm.</h3></div><p>Take a closer look at how our farm in the UAE operates, from our systems to our sturgeon.</p></div><a className="farm-film" href="https://www.youtube.com/watch?v=CUBzeGdRuHU" target="_blank" rel="noopener noreferrer" aria-label="Watch Pristine Caviar: Our fish farm on YouTube"><Image src="/images/farm-intro.jpg" alt="View inside the Pristine Caviar farm" fill sizes="(max-width: 1280px) 100vw, 1120px" /><span className="farm-film-shade" /><span className="farm-play"><Play size={22} fill="currentColor" /></span><span className="farm-film-title">Pristine Caviar — Our fish farm<small>Watch the video</small></span></a></section>
+  </div></section>;
 }

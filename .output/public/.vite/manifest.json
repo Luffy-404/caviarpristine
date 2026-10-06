@@ -1,13 +1,4 @@
 {
-  "_AnimatePresence-Cz1ZojUE.js": {
-    "file": "_next/static/chunks/AnimatePresence-Cz1ZojUE.js",
-    "name": "AnimatePresence",
-    "imports": [
-      "_rolldown-runtime-C60lm6uB.js",
-      "_react-DfjENj3M.js",
-      "_framework-D_rUT4EX.js"
-    ]
-  },
   "_Icon-Bo9jbUr1.js": {
     "file": "_next/static/chunks/Icon-Bo9jbUr1.js",
     "name": "Icon",
@@ -51,17 +42,8 @@
     "file": "_next/static/chunks/rolldown-runtime-C60lm6uB.js",
     "name": "rolldown-runtime"
   },
-  "_use-reduced-motion-BLvXp60f.js": {
-    "file": "_next/static/chunks/use-reduced-motion-BLvXp60f.js",
-    "name": "use-reduced-motion",
-    "imports": [
-      "_rolldown-runtime-C60lm6uB.js",
-      "_react-DfjENj3M.js",
-      "_framework-D_rUT4EX.js"
-    ]
-  },
   "components/case-studies-section.tsx": {
-    "file": "_next/static/chunks/case-studies-section-CiRGzo4L.js",
+    "file": "_next/static/chunks/case-studies-section-B695GJZN.js",
     "name": "case-studies-section",
     "src": "components/case-studies-section.tsx",
     "isDynamicEntry": true,
@@ -72,75 +54,58 @@
       "_framework-D_rUT4EX.js"
     ]
   },
-  "components/faq-section.tsx": {
-    "file": "_next/static/chunks/faq-section-B0vwxsqx.js",
-    "name": "faq-section",
-    "src": "components/faq-section.tsx",
+  "components/migrated-content-sections.tsx": {
+    "file": "_next/static/chunks/migrated-content-sections-Bv1NrCso.js",
+    "name": "migrated-content-sections",
+    "src": "components/migrated-content-sections.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
       "node_modules/vinext/dist/shims/image.js",
-      "_AnimatePresence-Cz1ZojUE.js",
-      "_react-DfjENj3M.js",
-      "_use-reduced-motion-BLvXp60f.js",
+      "_createLucideIcon-CLApvFWr.js",
+      "_arrow-up-right-BaaZSV8Y.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "components/motion/index.tsx": {
-    "file": "_next/static/chunks/motion-CV_V-Qtj.js",
+    "file": "_next/static/chunks/motion-Drqm511U.js",
     "name": "motion",
     "src": "components/motion/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
       "_react-DfjENj3M.js",
-      "_use-reduced-motion-BLvXp60f.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "components/pristine-farm-section.tsx": {
-    "file": "_next/static/chunks/pristine-farm-section-B83DSQSW.js",
+    "file": "_next/static/chunks/pristine-farm-section-dQucpKeW.js",
     "name": "pristine-farm-section",
     "src": "components/pristine-farm-section.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_rolldown-runtime-C60lm6uB.js",
       "components/motion/index.tsx",
       "node_modules/vinext/dist/shims/image.js",
-      "_AnimatePresence-Cz1ZojUE.js",
       "_react-DfjENj3M.js",
       "_createLucideIcon-CLApvFWr.js",
-      "_arrow-up-right-BaaZSV8Y.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "components/site-header.tsx": {
-    "file": "_next/static/chunks/site-header-Ubl6EkpA.js",
+    "file": "_next/static/chunks/site-header-C9NPvM4P.js",
     "name": "site-header",
     "src": "components/site-header.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_AnimatePresence-Cz1ZojUE.js",
       "_react-DfjENj3M.js",
       "_createLucideIcon-CLApvFWr.js",
       "_arrow-up-right-BaaZSV8Y.js",
       "_framework-D_rUT4EX.js"
     ]
   },
-  "components/sustainability-numbers-section.tsx": {
-    "file": "_next/static/chunks/sustainability-numbers-section-clmxahmY.js",
-    "name": "sustainability-numbers-section",
-    "src": "components/sustainability-numbers-section.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "components/motion/index.tsx",
-      "_createLucideIcon-CLApvFWr.js",
-      "_framework-D_rUT4EX.js"
-    ]
-  },
   "components/testimonials-section.tsx": {
-    "file": "_next/static/chunks/testimonials-section-DNIMAJYG.js",
+    "file": "_next/static/chunks/testimonials-section-Cnx3LwS9.js",
     "name": "testimonials-section",
     "src": "components/testimonials-section.tsx",
     "isDynamicEntry": true,
@@ -150,7 +115,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/image.js": {
-    "file": "_next/static/chunks/image-Cq78lhE6.js",
+    "file": "_next/static/chunks/image-BfTesDGK.js",
     "name": "image",
     "src": "node_modules/vinext/dist/shims/image.js",
     "isDynamicEntry": true,
@@ -161,7 +126,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "_next/static/chunks/app-route-prefetch-policy-qgELiXNi.js",
+    "file": "_next/static/chunks/app-route-prefetch-policy-BazCx4n2.js",
     "name": "app-route-prefetch-policy",
     "src": "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -170,7 +135,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "_next/static/chunks/layout-segment-context-Cxl4O9tm.js",
+    "file": "_next/static/chunks/layout-segment-context-C5LfrkS1.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -181,7 +146,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/streamed-icons.js": {
-    "file": "_next/static/chunks/streamed-icons-Krg5Wk5X.js",
+    "file": "_next/static/chunks/streamed-icons-OxY85Jz7.js",
     "name": "streamed-icons",
     "src": "node_modules/vinext/dist/shims/streamed-icons.js",
     "isDynamicEntry": true,
@@ -191,7 +156,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "_next/static/chunks/index-BGKMtP-j.js",
+    "file": "_next/static/chunks/index-YHsAtWOl.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -207,11 +172,10 @@
       "components/motion/index.tsx",
       "_Icon-Bo9jbUr1.js",
       "components/pristine-farm-section.tsx",
+      "components/migrated-content-sections.tsx",
       "node_modules/vinext/dist/shims/streamed-icons.js",
       "components/site-header.tsx",
       "node_modules/vinext/dist/shims/image.js",
-      "components/sustainability-numbers-section.tsx",
-      "components/faq-section.tsx",
       "components/case-studies-section.tsx"
     ]
   }
