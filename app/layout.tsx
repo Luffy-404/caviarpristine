@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Instrument_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import "./navbar.css";
 import "./hero.css";
@@ -27,10 +27,16 @@ import "./quality-editorial.css";
 import "./our-direction.css";
 import "./sturgeon-editorial.css";
 import "./our-direction.css";
+import "./editorial-pages.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+});
+
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin"],
+  variable: "--font-instrument-sans",
 });
 
 export const metadata: Metadata = {
@@ -52,7 +58,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${inter.variable} ${instrumentSans.variable} antialiased`}>
         {children}
       </body>
     </html>

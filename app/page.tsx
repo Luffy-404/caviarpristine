@@ -7,6 +7,7 @@ import { PristineFarmSection } from "@/components/pristine-farm-section";
 import { CaseStudiesSection } from "@/components/case-studies-section";
 import { SiteHeader } from "@/components/site-header";
 import { TestimonialsSection } from "@/components/testimonials-section";
+import { FaqSection } from "@/components/faq-section";
 import { EnquirySection, OrderingAndQualitySections, ProductAndAudienceSections, SturgeonAndConsultancySections } from "@/components/migrated-content-sections";
 import { fadeScale, fadeUp, Reveal, Stagger } from "@/components/motion";
 
@@ -25,6 +26,7 @@ export default function Home() {
   <CaseStudiesSection />
   <TestimonialsSection />
   <EnquirySection />
+  <FaqSection />
   <Footer />
  </main>;
 }
