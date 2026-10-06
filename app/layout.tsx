@@ -28,6 +28,12 @@ import "./our-direction.css";
 import "./sturgeon-editorial.css";
 import "./our-direction.css";
 import "./editorial-pages.css";
+import "./mega-menu.css";
+import "./collection-card-motion.css";
+import "./collection-header.css";
+import "./pristine-story-video.css";
+import "./video-hero.css";
+import "./our-direction-editorial.css";
 
 const inter = Inter({
   subsets: ["latin"],

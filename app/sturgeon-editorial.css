@@ -10,3 +10,9 @@
   font-family: var(--font-inter), Arial, sans-serif;
 }
 
+/* Approved local Sturgeon product photography. */
+.sturgeon-product-fresh .sturgeon-product-image{background-image:url('/images/sturgeon/fresh-sturgeon-fillet.webp');filter:none}
+.sturgeon-product-frozen .sturgeon-product-image{background-image:url('/images/sturgeon/frozen-sturgeon-fillet.webp');filter:none}
+.sturgeon-product-smoked .sturgeon-product-image{background-image:url('/images/sturgeon/smoked-sturgeon-fillet.webp');filter:none}
+.sturgeon-product-whole .sturgeon-product-image{background-image:url('/images/sturgeon/whole-sturgeon.webp');filter:none}
+
