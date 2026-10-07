@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Droplets, Fish, Sparkles } from "lucide-react";
-import { RevealText } from "@/components/motion";
+import { CharacterReveal } from "@/components/motion";
 
 const values = [
   { label: "Controlled farming", Icon: Fish },
@@ -16,7 +16,7 @@ export function IntroAndApproachSection() {
       <div className="approach-content">
         <Sparkles className="approach-mark approach-reveal approach-reveal-mark" aria-hidden="true" size={21} strokeWidth={1.1} />
         <p className="approach-pill approach-reveal approach-reveal-pill">Our approach</p>
-        <h2 className="approach-reveal approach-reveal-heading"><RevealText text="At Pristine, we are redefining premium aquaculture through" /><span> <RevealText text="quality, technology and responsible farming." /></span></h2>
+        <h2 className="approach-reveal approach-reveal-heading"><CharacterReveal text="At Pristine, we are redefining premium aquaculture through" /><span> <CharacterReveal text="quality, technology and responsible farming." /></span></h2>
         <p className="approach-description approach-reveal approach-reveal-description">
           From carefully managed aquaculture to exceptional caviar, we combine
           controlled farming, water recirculation and meticulous production.

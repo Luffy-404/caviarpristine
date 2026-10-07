@@ -1,4 +1,5 @@
 /* Pristine type system: Inter for UI and Instrument Sans for editorial display. */
+:root{--type-display:clamp(72px,6.2vw,96px);--type-hero:clamp(64px,6vw,84px);--type-section:clamp(48px,4.6vw,64px);--type-card:clamp(22px,2vw,30px);--type-lead:clamp(16px,1.35vw,19px);--type-body:16px;--type-eyebrow:11px;--type-button:12px;--leading-display:1.02;--leading-hero:1.03;--leading-section:1.06;--leading-card:1.12;--tracking-display:-.05em;--tracking-section:-.042em;--tracking-card:-.028em}
 body { font-family: var(--font-inter), Arial, sans-serif; }
 
 .hero h1,
@@ -15,3 +16,5 @@ body { font-family: var(--font-inter), Arial, sans-serif; }
 .float-card strong {
   font-family: var(--font-instrument-sans), Arial, sans-serif;
 }
+
+@media(max-width:767px){:root{--type-display:clamp(48px,12vw,64px);--type-hero:clamp(46px,11vw,58px);--type-section:clamp(32px,9vw,44px);--type-card:clamp(20px,6vw,26px);--type-lead:16px;--type-body:15px;--type-eyebrow:11px;--type-button:12px}}

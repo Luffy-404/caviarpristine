@@ -1,4 +1,4 @@
 import type { Metadata } from "next";
-import { NavigationDestinationPage } from "@/components/navigation-destination-page";
+import { AboutPage } from "@/components/about-page";
 export const metadata: Metadata = { title: "About Pristine Caviar", description: "Discover Pristine Caviar and its controlled aquaculture operation in Abu Dhabi." };
-export default function Page() { return <NavigationDestinationPage eyebrow="About Pristine" title="From Abu Dhabi, with control from farm to tin." copy="Pristine brings together controlled aquaculture, thoughtful handling and a considered caviar collection." image="/images/farm-intro.jpg" sections={[{ id: "direction", eyebrow: "Our direction", title: "Exceptional caviar begins with the environment behind it.", copy: "Every choice is guided by care for the water, the fish and the details that carry quality forward." }, { id: "leadership", eyebrow: "Leadership", title: "Built around knowledge, discipline and daily care.", copy: "Our team brings practical aquaculture expertise to every stage of farming and selection." }]} />; }
+export default function Page() { return <AboutPage />; }

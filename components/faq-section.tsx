@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useState } from "react";
-import { RevealText } from "@/components/motion";
+import { CharacterReveal } from "@/components/motion";
 
 const faqs = [
   ["What makes Pristine caviar distinctive?", "Pristine caviar is shaped by attentive aquaculture, careful selection and a considered approach to every stage from water to table."],
@@ -22,7 +22,7 @@ export function FaqSection() {
       <div className="faq-shell">
         <motion.div className="faq-intro" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: reducedMotion ? 0 : 0.5, ease: "easeOut" }}>
           <p className="faq-eyebrow">FAQs</p>
-          <h2 id="faq-title"><RevealText text="Questions about " /><span><RevealText text="considered caviar." /></span></h2>
+          <h2 id="faq-title"><CharacterReveal text="Questions about " /><span><CharacterReveal text="considered caviar." /></span></h2>
           <motion.div className="faq-image" initial={{ opacity: 0, scale: 0.97 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: reducedMotion ? 0 : 0.65, ease: "easeOut", delay: reducedMotion ? 0 : 0.12 }}>
             <Image src="/images/hero-landscape.png" fill sizes="(max-width: 767px) 100vw, 48vw" alt="Aerial view of the green landscape surrounding Pristine" />
           </motion.div>
